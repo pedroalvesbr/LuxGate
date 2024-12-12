@@ -1,0 +1,32 @@
+Menu header
+
+Inicio - portoes/portas - controle de acesso - serralheira geral - contato 
+
+--logo ou foto de fundo
+texto: breve explicacao sobre a empresa
+
+
+--portoes/portas
+texto: breve explicacao sobre portas e portoes
+
+--controle de acesso
+texto: breve explicacao sobre controle de acesso
+cameras / fechadura eletronica / cerca eletrica 
+
+
+--serralheira 
+texto: breve explicacao sobre servico de serralherinha 
+servico comercial e industrial
+
+--contato
+wpp
+
+---rodape
+clientes
+contato
+
+
+refs::::
+megadoors
+favarettoPortas
+garen.com.br
