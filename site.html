@@ -1,205 +1,381 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LUXGATE</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
+<head>
+<style>
+/* GLOBAL STYLES */
+body {
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
 
-  <style>
-    .navbar-gradient {
-        background-image: linear-gradient(to right, #b0b0b0, #f3f3f3);
+/* CAROUSEL STYLES */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+
+/* MARKETING CONTENT */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-heading {
+    letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS */
+@media (min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
     }
-  </style>
-  <body>
-<!--teste de commit -->
 
-<!--colocar uma quebra de linha-->
-<div class="row">
-      <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-gradient ">
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
 
-  <div class="container-fluid ">
-   <img id="logo_empresa" src="imagens/logo.png" style="width: 100px; height: auto;">
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+.nav-link {
+  color: #000; /* Define a cor preta para os links */
+  text-decoration: none; /* Remove o sublinhado */
+}
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-       
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sobre Nós</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Catálogos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Portões/Portas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Controle de Acesso</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Serralheira</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
-        </li>
-        <li class="nav-item">
-          <i class="bi bi-facebook"></i>
-        </li>
-        
-        
-      </ul>
-  
+.nav-link:hover {
+  color: #555; /* Cor ao passar o mouse (opcional) */
+}
 
-  </div>
-</nav>
+.nav i {
+  font-size: 20px; /* Ajusta o tamanho dos ícones */
+}
+
+.nav .me-3 {
+  margin-right: 15px; /* Espaçamento entre os ícones das redes sociais */
+}
+
+.bi-facebook,
+.bi-linkedin,
+#bi-whatsapp-header,
+.bi-instagram {
+  color: #000; /* Cor preta para os ícones */
+}
+
+.bi-facebook:hover,
+.bi-linkedin:hover,
+.bi-whatsapp:hover,
+.bi-instagram:hover {
+  color: #555; /* Cor ao passar o mouse (opcional) */
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+  color: black !important;
+}
+
+.carousel-caption {
+  background: rgba(255, 255, 255, 0.8); /* Fundo branco transparente */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Cantos arredondados para um visual mais agradável */
+}
 
 
+
+</style>
+</head>
+<body>
+<header class="fixed-top default-fixed-header bg-white headroom--not-top headroom--not-bottom headroom--pinned">
+
+
+ <div class="header-top-01 header-top-light small">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Telefone e WhatsApp -->
+      <div class="col-lg-6">
+        <div class="nav d-flex">
+          <a class="nav-link ps-0 text-dark" href="tel:+5512982601279">
+            <i class="bi-telephone-fill"></i> (12) 98260-1279
+          </a>
+          <a class="nav-link ms-auto ms-lg-0 pe-0 text-dark" href="https://wa.me/5512982601279" target="_blank">
+            <i class="bi bi-geo-alt"></i> Vale do Paraíba - SP
+          </a>
+        </div>
+      </div>
+      <!-- Redes Sociais -->
+      <div class="col-lg-6 d-none d-lg-block">
+        <div class="nav justify-content-end">
+          <a href="#" class="me-3"><i class="bi-facebook"></i></a>
+          <a href="#" class="me-3"><i class="bi-linkedin"></i></a>
+          <a href="#" class="me-3"><i class="bi-whatsapp" id="bi-whatsapp-header"></i></a>
+          <a href="#"><i class="bi-instagram"></i></a>
+        </div>
       </div>
     </div>
   </div>
+</div>
+
+  <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> -->
+    <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
+    <div class="container-fluid">
+        <img id="logo_empresa" src="imagens/logo.png" style="width: 80px; height: auto; padding-right: 10px;"></img>
+      <a class="navbar-brand" href="#">GATELUX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portoes-section">Portões/Portas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos-section">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato-section">Contatos</a>
+          </li>
+        </ul>
 
 
-<!-- inicio do conteudo -->
+       
+      </div>
+    </div>
+  </nav>
 
 
-<div class="px-3 py-2 text-bg-white">
+</header>
 
-
-  <!-- coluna do carrousel -->
-   <div id ="central" class="col-md-12 order-1 order-md-2">
-
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<main>
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active">
+      </button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="imagens/portao.jpg" class="d-block w-100 img-fluid " alt="...">
+        <img src="imagens/portao.jpg" class="w-100" alt="First slide">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Portas de Enrolar Automáticas </h1>
+            <p>Compactas e práticas, perfeitas para espaços reduzidos. </p>
+          </div>
+        </div>
+      </div>
+       <div class="carousel-item">
+        <img src="imagens/porta-contra-fogo.jpg" class="w-100" alt="Second slide">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Portas Contra-Fogo</h1>
+            <p>Certificadas de acordo com as normas de proteção contra incêndios</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+          </div>
+        </div>
       </div>
       <div class="carousel-item">
-        <img src="imagens/portao.jpg" class="d-block w-100 img-fluid" alt="...">
+        <img src="imagens/porta-seccional.jpg" class="w-100" alt="Third slide">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Portas Seccionais.</h1>
+            <p>Ideais para armazéns e centros logísticos. Oferecem isolamento térmico e acústico, além de
+serem altamente personalizáveis para atender às necessidades específicas de cada ambiente.</p>
+           
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="imagens/portao.jpg" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-item">
+        <img src="imagens/porta-enrolar-velocidade.jpg" class="w-100" alt="Second slide">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Portas Automáticas de Alta Velocidade</h1>
+            <p>Desenvolvidas para ambientes que exigem rapidez e eficiência,
+otimizando processos e reduzindo perdas de energia. Ideal para indústrias com alto fluxo de tráfego.</p>
+          </div>
+        </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
     </button>
-    </div> 
+  </div>
 
-    <div class="row">
+<a rel="noreferrer" id="botao_wpp" href="https://wa.me/5512982601279" style="position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            bottom: 150px;
+            right: 20px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 1px 1px 2px #888;
+            z-index: 100;" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+</a>
 
-    <div class="col-sm-6">
-      <img style="display:block;float:left; padding:6px;" width="100%" src="imagens/porta_alta_velocidade.png">
-    </div>
-    <div class="col-sm-6">
-      <h2>Portas Automáticas de Alta Velocidade</h2>
-      Desenvolvidas para ambientes
-      que exigem rapidez e eficiência,
-      otimizando processos e
-      reduzindo perdas de energia.
-      Ideal para indústrias com alto
-      fluxo de tráfego.
-    </div>
 
- 
-    <div class="col-sm-6">
-        <h2>Portas Seccionais</h2>
-        Ideais para armazéns e centros
-        logísticos. Oferecem isolamento
-        térmico e acústico, além de
-        serem altamente personalizáveis
-        para atender às necessidades
-        específicas de cada ambiente.
-    </div>
-    <div class="col-sm-6">
-      <img style="display:block;float:left; padding:6px;" width="100%" src="imagens/porta_seccionais.webp">
-    </div>
+  <div class="container marketing">
+    <div class="row" id="portoes-section">
+      <div class="col-lg-4">
+        <img src="imagens/instalacao-profissional.jpg" class="rounded-circle img-fluid" style="width: 250px; height: 250px; object-fit: cover;">
+        <h2 class="fw-normal">Instalação Profissional</h2>
+        <p>Equipe técnica treinada e qualificada para garantir uma
+montagem segura e eficiente, assegurando o bom funcionamento e a durabilidade da porta.</p>
+        <p><a href="https://wa.me/5512982601279" target="_blank" class="btn btn-secondary"><span class="bi-whatsapp"></span> <span class="btn-inner--text">Solicitar orçamento</span></a></p>
+      </div>
+      <div class="col-lg-4">
+        <img src="imagens/manutencao-preventiva.jpeg" class="rounded-circle img-fluid" style="width: 250px; height: 250px; object-fit: cover;">
+        <h2 class="fw-normal">Manutenção Preventiva e Corretiva</h2>
+        <p>Assistência especializada para prolongar a vida útil das portas, com serviços de
+manutenção preventiva e corretiva, garantindo o bom funcionamento e evitando problemas futuros</p>
+        <p><a href="https://wa.me/5512982601279" target="_blank" class="btn btn-secondary"><span class="bi-whatsapp"></span> <span class="btn-inner--text">Solicitar orçamento</span></a></p>
+      </div>
+      <div class="col-lg-4">
+        <img src="imagens/automatizacao.png" class="rounded-circle img-fluid" style="width: 250px; height: 250px; object-fit: cover;">
+        <h2 class="fw-normal">Soluções Técnicas e Automatização </h2>
+        <p> Transformamos sistemas manuais em automáticos, com soluções personalizadas que garantem segurança, eficiência e praticidade, otimizando seus processos.</p>
+        <p><a href="https://wa.me/5512982601279" target="_blank" class="btn btn-secondary"><span class="bi-whatsapp"></span> <span class="btn-inner--text">Solicitar orçamento</span></a></p>
 
-    <div class="col-sm-6">
-      <img style="display:block;float:left; padding:6px;" width="100%" src="imagens/porta_enrolar_automatica.jpg">
-    </div>
-    <div class="col-sm-6">
-      <h2>Portas de Enrolar Automáticas</h2>
-      Compactas e práticas, perfeitas
-      para espaços reduzidos.
-      Fabricadas com materiais
-      resistentes e de longa
-      durabilidade, garantindo
-      segurança e praticidade
-    </div>
-
- 
-    <div class="col-sm-6">
-        <h2>Portas Corta-Fogo</h2>
-        Garantem segurança em
-        situações de emergência,
-        certificadas de acordo com as
-        normas de proteção contra
-        incêndios, proporcionando
-        tranquilidade e proteção.
-    </div>
-    <div class="col-sm-6">
-      <img style="display:block;float:left; padding:6px;" width="100%" src="imagens/corta-fogo.jpg">
-    </div>
-    
-    </div id="fim">
-    
-
-    
+      </div>
     </div>
 
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette" id="servicos-section" >
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1">Instalação para
+    <span class="text-body-secondary">Indústrias de Manufatura</span></h2>
+    <p class="lead">Soluções personalizadas para garantir eficiência, segurança e controle de acesso em ambientes industriais de produção.</p>
+  </div>
+  <div class="col-md-5">
+    <img src="imagens/industria-manufatura.png" class="w-100" data-aos="fade-left">
+  </div>
 </div>
-</div>
+   <hr class="featurette-divider">
 
-<!-- foot -->
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Portas para
+        <span class="text-body-secondary">Centros Logísticos e Armazéns</span></h2>
+        <p class="lead">Portas automáticas de alta performance para otimizar o fluxo de mercadorias, garantindo segurança, eficiência e controle de acesso..</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="imagens/centro-logistico.png" class="w-100"  data-aos="fade-right">
+      </div>
+    </div>
+    <hr class="featurette-divider">
 
-<div class="container col-12 col-md-12 order-5" id="footer">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Mais controle para
+        <span class="text-body-secondary">Empresas do Setor Agroindustrial</span></h2>
+        <p class="lead">Soluções específicas para atender às necessidades do setor agroindustrial,com foco em segurança, higiene e controle de temperatura</p>
+      </div>
+      <div class="col-md-5">
+        <img src="imagens/agro-industrial.png" class="w-100"  data-aos="fade-left">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+            <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Portas para
+        <span class="text-body-secondary">Centros Comerciais e Edifícios Corporativos</span></h2>
+        <p class="lead">Portas automáticas que combinam design moderno com funcionalidade, segurança
+e praticidade, proporcionando uma experiência positiva para seus clientes.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="imagens/centro-comercial.png" class="w-100"  data-aos="fade-right">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+  </div>
+<!--
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2024 GATELUX &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p> Telefone: 12 98260-1279 - Lucas Henrique (Gerente Operacional) </p>
+    <p> E-mail: lucashenrique.oliveira@outlook.com </p>
+  </footer>
+-->
+<footer class="container mt-4" id="contato-section">
   <div class="row">
-    <div class="col-sm" style="padding-top: 7px;">
-      Certificações <br/>
-      Políticas <br />
-      Meio Ambiente<br />
-      Nossos Canais <br />
-      Links Uteis <br />
+    <!-- Coluna 1 -->
+    <div class="col-md-4">
+      <p>&copy; 2024 GATELUX</p>
+       <a href="#" class="me-3"><i class="bi-facebook"></i></a>
+          <a href="#" class="me-3"><i class="bi-linkedin"></i></a>
+          <a href="#" class="me-3"><i class="bi-whatsapp" id="bi-whatsapp-header"></i></a>
+          <a href="#"><i class="bi-instagram"></i></a>
     </div>
-    <div class="col-sm" style="padding-top: 7px;">
-      Coluna 2
+    <!-- Coluna 2 -->
+    <div class="col-md-4 text-center">
+      <p>Telefone: 12 98260-1279</p>
+      <p>Lucas Henrique (Gerente Operacional)</p>
     </div>
-    <div class="col-sm" style="padding-top: 7px;">
-      <h6>Redes sociais</h6>
-          <button type="button" class="btn btn-social-icon btn-facebook btn-rounded"><i class="fa fa-facebook"></i></button>
-          <button type="button" class="btn btn-social-icon btn-youtube btn-rounded"><i class="fa fa-youtube"></i></button>   
-          <button type="button" class="btn btn-social-icon btn-linkedin btn-rounded"><i class="fa fa-linkedin"></i></button>
-          <button type="button" class="btn btn-social-icon btn-instagram btn-rounded"><i class="fa fa-instagram"></i></button>
-                  
+    <!-- Coluna 3 -->
+    <div class="col-md-4 text-md-end">
+      <p>E-mail: lucashenrique.oliveira@outlook.com</p>
+      <p><a href="#">Início</a></p>
+    </div>
+  </div>
+</footer>
 
 
-</div>
 
 
+
+
+</main>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
 
 </body>
-
-
-<!--bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-
-  
-  
 </html>
-
-
-
