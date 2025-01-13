@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
 <style>
 /* GLOBAL STYLES */
 body {
     padding-bottom: 3rem;
     color: #5a5a5a;
 }
+/*
+.carousel-item img {
+  height: 100vh; 
+  object-fit: cover; 
+}
+*/
 
-/* CAROUSEL STYLES */
+.carousel-item img {
+  object-fit: cover; /* Mantém proporção e preenche o espaço */
+  width: 100%; /* Garante largura total */
+  height: 80vh; /* Ajusta a altura para telas maiores */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .carousel {
-    margin-bottom: 4rem;
+  margin-top: 56px; /* Ajusta caso a navbar esteja fixa no topo */
 }
 
-.carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-}
 
-.carousel-item {
-    height: 32rem;
-}
 
 /* MARKETING CONTENT */
+
+
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
@@ -41,7 +61,6 @@ body {
     letter-spacing: -.05rem;
 }
 
-/* RESPONSIVE CSS */
 @media (min-width: 40em) {
     .carousel-caption p {
         margin-bottom: 1.25rem;
@@ -60,12 +79,15 @@ body {
     }
 }
 .nav-link {
-  color: #000; /* Define a cor preta para os links */
-  text-decoration: none; /* Remove o sublinhado */
+  color: #ffae0e;
+  text-decoration: none;
 }
 
+.navbar-brand{
+  color: #ffae0e;
+}
 .nav-link:hover {
-  color: #555; /* Cor ao passar o mouse (opcional) */
+  color: #ffae0e; /* Cor ao passar o mouse (opcional) */
 }
 
 .nav i {
@@ -87,7 +109,7 @@ body {
 .bi-linkedin:hover,
 .bi-whatsapp:hover,
 .bi-instagram:hover {
-  color: #555; /* Cor ao passar o mouse (opcional) */
+  color: #ffae0e; /* Cor ao passar o mouse (opcional) */
 }
 
 .carousel-caption h1,
@@ -97,22 +119,25 @@ body {
 
 .carousel-caption {
   background: rgba(255, 255, 255, 0.8); /* Fundo branco transparente */
-  padding: 10px; /* Espaçamento interno */
-  border-radius: 5px; /* Cantos arredondados para um visual mais agradável */
+  padding: 20px; 
+  border-radius: 15px; 
 }
 
+.btn btn-secondary{
+    background-color: #ffae0e;
+
+}
 
 
 </style>
 </head>
 <body>
-<header class="fixed-top default-fixed-header bg-white headroom--not-top headroom--not-bottom headroom--pinned">
 
+<header class="fixed-top default-fixed-header bg-white headroom--not-top headroom--not-bottom headroom--pinned">
 
  <div class="header-top-01 header-top-light small">
   <div class="container">
     <div class="row align-items-center">
-      <!-- Telefone e WhatsApp -->
       <div class="col-lg-6">
         <div class="nav d-flex">
           <a class="nav-link ps-0 text-dark" href="tel:+5512982601279">
@@ -123,7 +148,6 @@ body {
           </a>
         </div>
       </div>
-      <!-- Redes Sociais -->
       <div class="col-lg-6 d-none d-lg-block">
         <div class="nav justify-content-end">
           <a href="#" class="me-3"><i class="bi-facebook"></i></a>
@@ -134,8 +158,7 @@ body {
       </div>
     </div>
   </div>
-</div>
-
+</div> 
   <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> -->
     <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
     <div class="container-fluid">
@@ -158,18 +181,15 @@ body {
           <li class="nav-item">
             <a class="nav-link" href="#contato-section">Contatos</a>
           </li>
-        </ul>
-
-
-       
+        </ul>       
       </div>
     </div>
   </nav>
 
-
 </header>
 
 <main>
+    <div class="container-fluid p-0">
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active">
@@ -180,7 +200,7 @@ body {
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="imagens/portao.jpg" class="w-100" alt="First slide">
+        <img src="imagens/comercio_porta.jpeg" class="d-block w-100" alt="First slide">
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Portas de Enrolar Automáticas </h1>
@@ -359,6 +379,10 @@ e praticidade, proporcionando uma experiência positiva para seus clientes.</p>
   </div>
 </footer>
 
+<script>
+  AOS.init();
+</script>
+
 
 
 
@@ -366,14 +390,7 @@ e praticidade, proporcionando uma experiência positiva para seus clientes.</p>
 
 </main>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
 
 
 
